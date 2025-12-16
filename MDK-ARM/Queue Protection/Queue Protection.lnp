@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"queue protection\startup_stm32f103xb.o"
+"queue protection\main.o"
+"queue protection\stm32f1xx_it.o"
+"queue protection\stm32f1xx_hal_msp.o"
+"queue protection\stm32f1xx_hal_gpio_ex.o"
+"queue protection\stm32f1xx_hal_tim.o"
+"queue protection\stm32f1xx_hal_tim_ex.o"
+"queue protection\stm32f1xx_hal.o"
+"queue protection\stm32f1xx_hal_rcc.o"
+"queue protection\stm32f1xx_hal_rcc_ex.o"
+"queue protection\stm32f1xx_hal_gpio.o"
+"queue protection\stm32f1xx_hal_dma.o"
+"queue protection\stm32f1xx_hal_cortex.o"
+"queue protection\stm32f1xx_hal_pwr.o"
+"queue protection\stm32f1xx_hal_flash.o"
+"queue protection\stm32f1xx_hal_flash_ex.o"
+"queue protection\stm32f1xx_hal_exti.o"
+"queue protection\system_stm32f1xx.o"
+--strict --scatter "Queue Protection\Queue Protection.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Queue Protection.map" -o "Queue Protection\Queue Protection.axf"

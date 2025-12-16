@@ -1,0 +1,2 @@
+MCU STM32F103C8T6
+12MHz Crystal osillator
